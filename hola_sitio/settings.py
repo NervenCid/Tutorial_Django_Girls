@@ -25,7 +25,7 @@ SECRET_KEY = 'gaajmphe%)zhsadj=#be(=79j4y*-z8sj7sbptiln8id5qdhut'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nervencid.pythonanywhere.com']
+ALLOWED_HOSTS = ['nervencid.pythonanywhere.com' ,'127.0.0.1']
 
 
 # Application definition
