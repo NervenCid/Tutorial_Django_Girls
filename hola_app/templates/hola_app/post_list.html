@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--ADVERTENCIA: Chrome NO SOPORTADO!!!!!!!!-->
+<html>
+	<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+
+		<title>Formularios</title>
+
+		<!--Se agrega una regla de estilo CSS-->
+
+		<style type="text/css">
+
+
+
+		</style>
+
+		<!--Scritp Javascript-->
+		<script type="text/javascript">
+
+
+
+		</script>
+
+	</head>
+	<!--Llamamos la funcion cargador cuando se cargue la pagina-->
+	<body onload="cargador()">
+		<center><h1><strong>CONTROLES DE FORMULARIOS</strong></h1><center>
+
+		<!--Se crea el formulario>  Con ACTION indicamos el script que va procesar la informacion(en este caso llamamos una pagina web)
+		que recogemos en el formulario,
+		mientras que METHOD nos indica si el usuario del formulario va ha  enviar datos ( post ) o recogerlos ( get ).
+		La etiqueta <FORM> indica el final del formulario.-->
+		<form method="post" action="webforms.php">
+
+			<table border="1" cellpading="5">
+
+				    <tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Cuadro de texto
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- Cuadro de texto> Al no tener el atributo 'type' el navegador lo toma como un cuadro de texto por defecto-->
+							<input name="MiTexto" placeholder="Escriba un Texto" autofocus></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Control URL
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- URL: SOLO SOPORTADO EN OPERA!!! Completa direcciones url que alli se introduscan-->
+							<input name="MiTexto" placeholder="Escriba una Url" type="url"></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Control Correo Electronico
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- Corre electronico: SOLO SOPORTADO EN OPERA Y CHROME!!! Permite la introduccion de correos electronicos, valida si los mismos son validos-->
+							<input name="MiCorreo" placeholder="Escriba un mail" type="email"></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Rango
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- range: SOLO SOPORTADO EN OPERA Y CHROME!!!=Crea una deslizable-->
+							<!-- min: Limite inferior-->
+							<!-- max: Limite superior-->
+							<!-- step: Cambio minimo o resolucion del deslizable-->
+							<!-- value: Valor inicial o por defecto-->
+							<input name="MiRango" type="range" min="0" max="100" step="5" value="0"></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Numero
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- Numero: SOLO SOPORTADO EN OPERA Y CHROME!!!=Crea 'range' numerico-->
+							<!-- min: Limite inferior-->
+							<!-- max: Limite superior-->
+							<!-- step: Cambio minimo-->
+							<!-- value: Valor inicial o por defecto-->
+							<input name="MiNumero" type="number" min="0" max="100" step="1" value="0"></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Fecha
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- week: SOLO SOPORTADO EN OPERA Y CHROME!!!=Permite introducir fechas en forma estandar-->
+							<input name="MiNumero" type="date" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Semana
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- month: SOLO SOPORTADO EN OPERA Y CHROME!!!=Permite introducir fechas en forma estandar-->
+							<input name="MiSemana" type="week" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Mes
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- date: SOLO SOPORTADO EN OPERA Y CHROME!!!=Permite introducir fechas en forma estandar-->
+							<input name="MiMes" type="month" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Hora
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- time: SOLO SOPORTADO EN OPERA Y CHROME!!!=Permite introducir horas-->
+							<input name="Mitiempo" type="time" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Datetime
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- datetime: SOLO SOPORTADO EN OPERA Y CHROME!!!=Permite introducir fechas y horas al mismo tiempo-->
+							<input name="MiCita" type="datetime" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Local Datetime
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- datetime-local: SOLO SOPORTADO EN OPERA Y CHROME!!!=Similar a datetime-->
+							<input name="MiCitaLocal" type="datetime-local" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+					<tr><!-- Iniciar Fila-->
+
+						<td><!-- Iniciar Celda-->
+
+							Color
+
+						</td><!-- Terminar Celda-->
+						<td><!-- Iniciar Celda-->
+
+							<!-- Color: SOLO SOPORTADO EN OPERA!!!=Permite seleccionar un color proporcionando una paleta de color-->
+							<input name="MiColor" type="color" ></input>
+
+						</td><!-- Terminar Celda-->
+
+					</tr><!-- Terminar fila-->
+
+			</table>
+			<!-- Con este boton se envia la informacion-->
+			<input type="submit" value="Enviar">
+
+		</form>
+
+	</body>
+
+</html>
